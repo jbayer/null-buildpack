@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-echo "-----> Nothing to do."
+echo "-----> Cloning a repo"
+git clone https://github.com/jbayer/sinatra-websocket.git
+cp -R sinatra-websocket/* $1/
+echo "-----> Done with compile"

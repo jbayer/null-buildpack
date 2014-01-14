@@ -2,10 +2,12 @@
 # bin/compile <build-dir> <cache-dir>
 
 echo "-----> unzipping ratpack"
-unzip ratpack.zip
+mkdir zip
+unzip ratpack.zip -d zip
 echo "-----> current dir"
-pwd
-ls -alh .
+mkdir jar
+unzip -o zip/example-ratpack-gradle-groovy-app-fat.jar -d jar
+cp -R jar/* $1
 echo "-----> build dir"
 ls -alh $1
 echo "-----> Done with compile"

@@ -5,6 +5,7 @@ echo "-----> unzipping ratpack"
 unzip ratpack.zip
 cp example-ratpack-gradle-groovy-app-fat.jar $1/
 echo "-----> current dir"
+pwd
 ls -alh .
 echo "-----> build dir"
 ls -alh $1

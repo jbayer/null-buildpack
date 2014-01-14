@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-echo "-----> Cloning a repo"
-git clone https://github.com/jbayer/sinatra-websocket.git
-cp -R sinatra-websocket/* $1/
+echo "-----> unzipping ratpack"
+unzip ratpack.zip
+cp example-ratpack-gradle-groovy-app-fat.jar $1/
 echo "-----> Done with compile"

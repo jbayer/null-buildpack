@@ -7,4 +7,6 @@ echo "env2: $2"
 echo "env3: $3"
 echo "-----> current env"
 env
+echo "-----> env-var dir listing"
+ls -al $3
 echo "-----> Done with compile"
